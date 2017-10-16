@@ -1,0 +1,65 @@
+print (str(123) + ('awesome')) # adds 2 strings
+
+
+"abc" * 4  # prints it 4 times
+
+
+abc = ['some string', 123, 'happy'] # string / array
+print (abc)
+
+
+ 
+# .APPEND  -- ADD AN ITEM
+list_var = ['some stuff', 123, 'sad']   
+print (list_var)
+list_var.append('crap')  # .append   adds more to List
+print(list_var)
+
+
+
+#.POP  -- POP OFF AN ITEM
+list_var.pop()  #removes the last item in List, ()
+print (list_var)
+
+list_var.pop()  #removes the last item in List, ()
+print (list_var)
+
+
+
+
+list_var.append('crap')
+list_var.append('cat')
+list_var.append('cap')
+list_var.append('dog')
+# LEN  - LENGTH OF THE LIST / DIGITS
+print (len(list_var))  #number of items
+
+print(len('random string of nonsense')) #includes spaces
+
+
+
+print (list_var)
+#STARTING WITH ZERO
+print (list_var[0])
+print(list_var[3])
+
+abc = [5, 6, 7, 8]
+print(abc[0])  #return 5
+print(abc[3])  #return 8
+
+
+another = ['dave', 'mike', 'camel']
+print (another[2])
+
+#USING THE LIST
+another = ['dave', 'mike', 'camel']
+mike_name = another[1]
+print (mike_name)
+
+
+#POP - REMOVE SPECIFIC ITEM
+new_list = ['John', 'matt', 'mike', 'camel']
+new_list.pop(0)  # () here, not []
+print (new_list)
+print(len(new_list)) #now you know how many, so you can call [#] desired
+
