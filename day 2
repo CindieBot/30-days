@@ -1,0 +1,45 @@
+#DICTONARY - KEY(WORD) AND VALUE(DEFINITION)
+#{}CURLY
+a_dict = {"abc":"a string"}
+print (a_dict)
+
+another = {'kitty':'1',      #note the commas between items
+           'b':'3',       #on the LEFT=KEY, on the RIGHT=VALUE
+           'c':'4'
+           }
+    #KEY-VALUE PAIR DICTIONARY
+print (another)
+another['kitty'] = 'not 1'
+another['b'] = 'not 3'
+print(another)
+
+print(another['kitty'])
+
+
+
+
+#REVIEW --- LIST [] - GOES OFF POSITION
+            #   list=[1,2,3]
+            #   print(list[1])
+            #   2
+            #   list.append('4')
+            #   print(list[3])
+            #   4
+list=[1,2,3]
+print(list[0])      #returns '1'; must use postion; IndexError if not used right
+list.append('5')    #ADDING TO THE LIST
+print(list[3])      #returns '5'
+
+#REVIEW --- DICTIONARY {}- GOES OFF THE KEY, NOT POSITION (key error if not used right)
+            #   dict={'a':'yes', 'b':'no'}
+            #   print(dict['a'])
+            #   'no'
+            #   dict['12']='twelve'
+            #   print(dict['12'])
+dict = {'a':'yes', 'b':'no'}
+print(dict['a'])   # must use Key and Brackets, returns 'yes'
+
+dict['0']='new phrase'  #ADDING TO THE DICTIONARY; 0 IS THE KEY
+dict['4']='people'      #ADDING TO THE DICTIONARY; 4 IS THE KEY
+dict['5']='horse'       #ADDING TO THE DICTIONARY; 5 IS THE KEY
+print (dict['5'])       #returns 'horse'
