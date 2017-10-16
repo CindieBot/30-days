@@ -1,12 +1,9 @@
 print (str(123) + ('awesome')) # adds 2 strings
 
-
 "abc" * 4  # prints it 4 times
-
 
 abc = ['some string', 123, 'happy'] # string / array
 print (abc)
-
 
  
 # .APPEND  -- ADD AN ITEM
@@ -14,7 +11,6 @@ list_var = ['some stuff', 123, 'sad']
 print (list_var)
 list_var.append('crap')  # .append   adds more to List
 print(list_var)
-
 
 
 #.POP  -- POP OFF AN ITEM
@@ -25,8 +21,6 @@ list_var.pop()  #removes the last item in List, ()
 print (list_var)
 
 
-
-
 list_var.append('crap')
 list_var.append('cat')
 list_var.append('cap')
@@ -35,7 +29,6 @@ list_var.append('dog')
 print (len(list_var))  #number of items
 
 print(len('random string of nonsense')) #includes spaces
-
 
 
 print (list_var)
