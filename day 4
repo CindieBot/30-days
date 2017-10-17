@@ -1,0 +1,31 @@
+#CONDITIONAL
+print('CINDIE' == 'CINDIE')
+#>>> True
+
+list_a = [123]
+list_b = [123]
+list_c = [432]
+print (list_a == list_b)
+#>>>True
+print (list_a == list_c)
+#>>>False
+print (list_a != list_c)
+#>>>True
+print(not list_a)
+#>>>False
+print (not list_a is list_b)
+#>>>True
+
+
+
+#CONDITIONAL FOR LOOP
+bag = [10, 15, 20]
+for item in bag:
+    if item == 15:          #if one item is named '15', print.
+        print('yeahhh')     #this is not a count!
+#>>> 'yeahhh'               #because 15 is in our list
+
+print (not list_a is list_b)
+#>>>True
+
+
