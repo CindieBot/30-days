@@ -1,0 +1,68 @@
+#Day 2 - Tuples
+# used in databases when there are options for the user
+# the first value is for backend, the 2nd is for the user to see
+
+tup = ()
+tup = ('abc1', 'abc2')
+print (tup)
+#>>>'abc1', 'abc2'
+
+tup = (
+    ('another1', 'another2'),
+    ('more1', 'more2'))
+print (tup)
+#>>>(('another1', 'another2'), ('more1', 'more2'))
+print(tup[0])
+#>>>('another1', 'another2')
+print (tup[0][0])  #zero position of the zero position
+#>>>'another1'
+
+tup += ('yetAnother', 123)  # += adding data to Tuple list
+print (tup)
+#>>>(('another1', 'another2'), ('more1', 'more2'), 'yetAnother', 123)
+#NOTE it did not ADD another Tuple. It added to the Tuple LIST.
+
+tup += (('yetMore', 123),)   #NOTE the ),) to create a tuple
+print (tup)
+#>>>(('another1'...'more2'), 'yetAnother', 123, ('yetMore', 123))
+
+the_list = []
+abc = ['another', 'another']
+the_list.append(abc)
+print(the_list)
+
+
+
+#LOOPS / ITERATIONS / WHILE / FOR
+
+bag = [10, 13, 15, 17, 21, 33, 324]
+print(len(bag))
+#>>> 7
+
+# FOR LOOP
+for item in bag:      # 'item' is the variable
+    print (item)
+#>>>10, 13, 15, 17, 21, 33, 324 #prints all items,
+
+
+# ITERATION - SIMPLE RUN THROUGH OF ITEMS IN LIST
+i = 0
+for item in bag:
+    i=i+1
+    print (i)
+#>>>1, 2,...6, 7  #all numbers 1-7)
+   
+#WHILE LOOP
+        # WHILE 'X' CONDITON IS TRUE, DO THIS STUFF:
+i = 9
+while i < 11:
+    print('yup')
+    i = i+1    #essential for stopping this loop!
+#>>>'yup' 'yup'
+    
+i = 0
+while i < 100:
+    print(i)
+    i=i+1     #essential for stopping this loop!
+#>>> prints 0-99
+
