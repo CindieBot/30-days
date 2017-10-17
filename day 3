@@ -45,7 +45,8 @@ for item in bag:      # 'item' is the variable
 #>>>10, 13, 15, 17, 21, 33, 324 #prints all items,
 
 
-# ITERATION - SIMPLE RUN THROUGH OF ITEMS IN LIST
+# ITERATION - in computing is the technique marking out of a 
+#block of statements within a computer program for a defined number of repetitions.
 i = 0
 for item in bag:
     i=i+1
