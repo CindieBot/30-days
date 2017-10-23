@@ -1,0 +1,148 @@
+
+# day 5
+# functionns
+
+items = ['Mic', 'phone', 325.25, 56.45, 'Justin', 'bag', 'Cliff bars', 123]
+print(isinstance(54.23, float))  #True
+
+# print (items.sort)  ==> can not do, because it can't prioritizes mix integers
+
+print('SORT LIST')
+str_items = ['abc', 'jm', 'car', 'ed', 'AAAD', 'THe']
+str_items.sort()
+print(str_items)
+#will sort all of the capitalized letters first, then all of the little letters.
+
+print('SORT REGARDLESS OF CASE')
+str_items.sort(key=str.lower)  #now it will sort regardless
+print(str_items)                #makes all seen as lower case
+
+print('REVERSE ORDER')
+str_items.sort(key=str.lower, reverse=True)  #now it will sort regardless
+print(str_items) 
+
+#to create 2 lists, one 'original' order and one 'alphabetized'.
+new_items = sorted(str_items)       #SORTED built-in
+print(new_items)
+new_items = sorted(str_items, key=str.lower, reverse=True)
+print(new_items)
+
+int_items =[323, 224.23, 123.65, 9898]
+int_items.sort()
+print (int_items)
+int_items.sort(reverse=True)
+print (int_items)
+
+new_items = sorted(int_items)
+print(new_items)
+
+print('SUM OF, LENGTH OF')
+print (sum(int_items))
+print(len(int_items))
+total = sum(int_items)
+average = total/len(int_items)
+print(average)
+
+#day 5 continued - functions
+
+items = ['mic', 4985, 'car', 'dogs', 'kitties', 89.53, 999, 'bag']
+
+str_items =[] #naming the future list
+num_items =[] #naming the future list
+
+for i in items: #refrencing the current list
+    if isinstance(i, float) or isinstance(i, int):   #separating number
+        num_items.append(i)     #adding to list num_items
+    elif isinstance(i, str):    #separating strings
+        str_items.append(i)     #adding to list str_items
+    else:                       #anything else, skip
+        pass
+    
+print(str_items)
+print(num_items)
+#__________________________________________________
+
+items = ['mic', 4985, 'car', 'dogs', 'kitties', 89.53, 999, 'bag']
+
+def parse_lists(ARGUMENT):    #Creating a funtion to call, with an argument
+    str_list_items =[]      #naming the lists to create
+    num_list_items =[]      #naming the lists to create
+    for i in ARGUMENT:         #here is our dividing loop
+        if isinstance(i, float) or isinstance(i, int):  #separating
+            num_list_items.append(i)    #appending to num_list_items
+        elif isinstance(i, str):        #separating
+            str_list_items.append(i)    #appending to str_list_items
+        else:
+            pass
+    return str_list_items,num_list_items    #bringing the lists into the function??
+
+                             #The ARGUMENT is the LIST we created!!
+print (parse_lists(items))   #This way we can change the list w/o modifying code
+
+
+#___________________________another example, with list in list
+
+items_2 =['kitties', 'phone', ['bag', 'cars', 9878]]
+
+def parse_lists(ARGUMENT):    #Creating a funtion to call, with an argument
+    str_list_items =[]      #naming the lists to create
+    num_list_items =[]      #naming the lists to create
+    for i in ARGUMENT:         #here is our dividing loop
+        if isinstance(i, float) or isinstance(i, int):  #separating
+            num_list_items.append(i)    #appending to num_list_items
+        elif isinstance(i, str):        #separating
+            str_list_items.append(i)    #appending to str_list_items
+        else:
+            pass
+    return str_list_items,num_list_items    #bringing the lists into the function??
+
+                               #The ARGUMENT is the LIST we created!!
+print (parse_lists(items_2))   #This way we can change the list w/o modifying code
+# does not acknowledge the 3rd list item because it is "other"; non string or int.
+# it's considered a list item, not a str, float, or int
+#_____________________________________________________________
+
+sum([123, 4324, 987])
+
+
+items = ['mic', 4985, 'car', 'dogs', 'kitties', 89.53, 999, 'bag']
+# "MY_SUM" THIS RETURNS THE SUM OF THE LIST INT AND FLOATS
+def my_sum(ARGUMENT_2):
+    total = 0
+    for i in ARGUMENT_2:
+        if isinstance(i, float) or isinstance(i, int):
+            total += i  #if a number, take that number, add it to other "i" values
+    return total  # because this is a local value??
+      
+
+print(my_sum(items))  # calls the function, weeds out the strings
+
+#print (sum(items)) #==> will not work b/c mixed with str
+#_________________________________
+print('new')
+
+items = ['mic', 4985, 'car', 'dogs', 'kitties', 89.53, 999, 'bag']
+
+
+
+def my_average(ARGUMENT3):
+    the_sum = my_sum(ARGUMENT3)  #FINDING THE SUM OF ARGUMENT3 LIST
+    num_of_items = len(ARGUMENT3)  #FINDING THE LEGTH OF ARG3 LIST
+    return the_sum/(num_of_items * 1.0)  #SUM OF LIST/LENGTH, change to float
+
+print(my_average(items))
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
