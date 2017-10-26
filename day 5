@@ -133,8 +133,44 @@ def my_average(ARGUMENT3):
 print(my_average(items))
 
 
+#day 5 continued
+items_abc = [10, 12, 14, 'hi', 'bye']
 
 
+def my_sum(my_num_list):   #adding all numbers up
+    total = 0
+    for i in my_num_list:
+        if isinstance(i, float) or isinstance(i, int):
+            total += i
+    return total
+
+print(my_sum(items_abc))
+
+
+#sum(items_abc) will not work b/c there are strings
+#the function adds only the int to the "total"
+#we didn't ask it to do anything with strings
+#not sure why IF statment was not needed.
+
+
+def count_nums(my_num_list):  #finding the len of the list
+    total = 0
+    for i in my_num_list:
+        if isinstance(i, float) or isinstance(i, int):
+            total += 1
+    return total
+
+print(count_nums(items_abc))
+
+
+
+def my_avg(my_num_list):
+    the_sum = my_sum(my_num_list)
+    #number_of_items = len(my_num_list)
+    number_of_items = count_nums(my_num_list)
+    return the_sum / (number_of_items*1.0)
+
+print(my_avg(items_abc))
 
 
 
