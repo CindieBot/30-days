@@ -133,10 +133,10 @@ def my_average(ARGUMENT3):
 print(my_average(items))
 
 
-#day 5 continued
+#day 5 continued----------------------------------------------------------------
 items_abc = [10, 12, 14, 'hi', 'bye']
 
-
+#1
 def my_sum(my_num_list):   #adding all numbers up
     total = 0
     for i in my_num_list:
@@ -152,7 +152,7 @@ print(my_sum(items_abc))
 #we didn't ask it to do anything with strings
 #not sure why IF statment was not needed.
 
-
+#2
 def count_nums(my_num_list):  #finding the len of the list
     total = 0
     for i in my_num_list:
@@ -163,17 +163,16 @@ def count_nums(my_num_list):  #finding the len of the list
 print(count_nums(items_abc))
 
 
-
+#3
 def my_avg(my_num_list):
     the_sum = my_sum(my_num_list)
-    #number_of_items = len(my_num_list)
     number_of_items = count_nums(my_num_list)
     return the_sum / (number_of_items*1.0)
 
 print(my_avg(items_abc))
 
 
-
+#Is it possible to combine functions 1 and 2???
 
 
 
