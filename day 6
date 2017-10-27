@@ -1,0 +1,33 @@
+#To create a function it must use the following format:
+    #==> def name_of_the_function(arguent to fill later)  <==
+
+#day 6   STRING SUBSTITUTIONS; the FORMAT function
+
+text = "This is a {var} string".format(var="really lame")
+print(text)
+
+name = "My name is {name}.".format(name='cindie')
+
+print(name)
+
+my_name = "cindie the great"
+name_2 = "Name is {the_name}".format(the_name=my_name)
+print (name_2)
+
+my_name = "name is {the_name}\n{the_name} is {the_name}".format(the_name = "cindie")
+print (my_name)
+
+#Can also print this way:
+print("name is {the_name}\n{the_name} is {the_name}".format(the_name = "cindie"))
+
+my_name = "name is {the_name}\n{NEW_name} is {the_name}".format(the_name = "cindie", NEW_name = "Cool")
+print (my_name)
+
+#POSITIONAL ARGUEMENTS; not necessary to use all
+text = "this is an argument {0} {0} {1} {2}".format("again", "no", "cool", "acts", "dogs")
+print (text)
+
+#ADDING FORMAT ARGUMENTS LATER
+abc = "This argument {0} {1} {3}"
+print (abc.format("again", "no", "cool", "cats", "dogs"))
+
