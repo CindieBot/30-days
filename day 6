@@ -1,7 +1,7 @@
 #To create a function it must use the following format:
     #==> def name_of_the_function(arguent to fill later)  <==
 
-#day 6   STRING SUBSTITUTIONS; the FORMAT function
+#day 6   STRING SUBSTITUTIONS: the FORMAT function
 
 text = "This is a {var} string".format(var="really lame")
 print(text)
